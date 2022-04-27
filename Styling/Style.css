@@ -195,6 +195,21 @@ iframe {
     overflow: visible; /* this is an example of the browser default */
 }
 
+.columngallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  float: left;
+  padding: 5px;
+}
+/* Clear floats after image containers */
+.row::after {
+  width: 30%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*table styling*/
 
 table, th, td {
