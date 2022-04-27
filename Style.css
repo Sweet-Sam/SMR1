@@ -4,6 +4,7 @@
      margin-left: auto;
      color: #000000;
      background-color: antiquewhite;
+     flex: 1 1 auto;
  }
 
  header {
@@ -73,8 +74,22 @@ header p {
 
 /*Main body, background*/
 .column {
-    height: 1200px;
+    background-size: contain;
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.columnabout {
+    height: 800px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -90,7 +105,7 @@ header p {
 
 /*footer*/
 footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -124,3 +139,23 @@ h1 {
     margin-right: auto;
     width: 50%;
   }
+
+
+#wrap {
+    margin: 3em 8em;
+}
+.left {
+    float: left;
+    margin-right: 1.5em;
+}
+.right {
+    float: right;
+    margin-left: 1em;
+}
+.pwrap {
+    margin-bottom: 2.5em;
+    overflow: hidden; /* this is what keep the <p> from wrapping */
+}
+.pwrap:last-child {
+    overflow: visible; /* this is an example of the browser default */
+}
