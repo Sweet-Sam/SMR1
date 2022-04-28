@@ -138,6 +138,14 @@ h1 {
     text-indent: 50px;
 }
 
+p:last-child{
+  margin-bottom: 30px;
+}
+
+figcaption:last-child{
+  margin-bottom: 30px;
+}
+
 .parpad {
   text-indent: 50px;
   padding: 10px;
